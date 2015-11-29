@@ -1,0 +1,10 @@
+<h3>{{model.name}}</h3>
+<p><strong>Title:</strong> {{model.title}}</p>
+<p><strong>Class: </strong>{{model.socialClass}}</p>
+<p><strong>Quotes:</strong>
+  <ul>
+    {{#each model.quotes as |quote| }}
+    <li>{{quote.description}}</li>
+    {{/each}}
+  </ul>
+</p>

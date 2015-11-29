@@ -1,0 +1,14 @@
+<h2>Characters</h2>
+
+<div class="row">
+  <div class="col-md-6">
+  <ul>
+    {{#each model as |character| }}
+    <li>{{link-to character.name "characters.character" character}}</li>
+    {{/each}}
+  </ul>
+  </div>
+  <div class="col-md-6">
+    {{outlet}}
+  </div>
+</div>
