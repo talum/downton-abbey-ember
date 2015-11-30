@@ -4,5 +4,6 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   title: DS.attr('string'),
   socialClass: DS.attr('string'),
-  quotes: DS.hasMany('quote', {async: true})
+  quotes: DS.hasMany('quote', {async: true}),
+  actor: DS.belongsTo('actor', {async: true})
 });
