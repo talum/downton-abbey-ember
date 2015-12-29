@@ -9,6 +9,9 @@ export default Ember.Route.extend({
       model.save().then((character) => {
         this.transitionTo('characters.character', character)
       });
+    }, 
+    cancel: function(){
+      this.transitionTo("characters");
     }
   }
 });

@@ -9,6 +9,9 @@ export default Ember.Route.extend({
       model.save().then((quote) => {
         this.transitionTo('quotes.index');
       });
+    }, 
+    cancel: function(){
+      this.transitionTo('quotes');
     }
   }
 });
