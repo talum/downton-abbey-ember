@@ -1,0 +1,9 @@
+<h2>New Quote</h2>
+<form {{action 'save' model on="submit"}}>
+  <p>
+    <label>Quote Content</label>
+    {{input value=model.description}}
+  </p>
+  <input type="submit" value="Add Quote">
+</form>
+{{outlet}}

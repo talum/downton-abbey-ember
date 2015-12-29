@@ -10,6 +10,13 @@ Router.map(function() {
     this.route('character', {
       path: ':character_id'
     });
+    this.route('new');
+  });
+  this.route('quotes', function() {
+    this.route('quote', {
+      path: ':quote_id'
+    });
+    this.route('new');
   });
 });
 

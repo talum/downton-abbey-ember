@@ -1,0 +1,5 @@
+<ul>
+    {{#each model as |quote| }}
+    <li>{{quote.description}} - <strong>{{link-to quote.character.name "characters.character" quote.character}}</strong></li>
+    {{/each}}
+  </ul>
