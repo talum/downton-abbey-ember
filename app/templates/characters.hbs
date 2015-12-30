@@ -2,9 +2,10 @@
 
 <div class="row">
   <div class="col-md-6">
+  <p>{{link-to "Add New Character" "characters.new"}}</p>
   <ul>
     {{#each model as |character| }}
-    <li>{{link-to character.name "characters.character" character}}</li>
+    <li>{{link-to character.name "characters.character" character}}, {{link-to "Edit" "characters.edit" character}}</li>
     {{/each}}
   </ul>
   </div>

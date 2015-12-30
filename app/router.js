@@ -11,6 +11,10 @@ Router.map(function() {
       path: ':character_id'
     });
     this.route('new');
+
+    this.route('edit', {
+      path: ':character_id/edit'
+    });
   });
   this.route('quotes', function() {
     this.route('quote', {
