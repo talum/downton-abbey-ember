@@ -22,6 +22,15 @@ Router.map(function() {
     });
     this.route('new');
   });
+  this.route('seasons', function() {
+    this.route('season', {
+      path: ':season_id'
+    }, function() {
+      this.route('episode', {
+        path: ':episode_id'
+      });
+    });
+  });
 });
 
 export default Router;
