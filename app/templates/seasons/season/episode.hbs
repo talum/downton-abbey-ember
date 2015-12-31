@@ -1,4 +1,9 @@
-<p>Episode</p>
-Title: {{model.name}}
-Summary: {{model.summary}}
+<h2>Episode Title: {{model.name}}</h2>
+<p>Summary: {{model.summary}}</p>
+<p>Quotes:</p>
+{{#each model.quotes as |quote| }}
+  <ul>
+    <li>{{quote.description}} - {{quote.character}}</li>
+  </ul>
+{{/each}}
 {{outlet}}
