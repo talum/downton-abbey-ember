@@ -1,7 +1,7 @@
 <form {{action 'save' quote on="submit"}}>
   <p>
     <label>Quote Content</label>
-    {{input value=quote.description}}
+    {{textarea value=quote.description}}
   </p>
   <p><label>Who Said It?</label>
     {{#x-select value=quote.character}}
@@ -9,6 +9,20 @@
         {{#x-option value=character}}{{character.name}}{{/x-option}}
       {{/each}}
   {{/x-select}}
+  </p>
+  <p><label>Season</label>
+    {{#x-select value=selectedSeason}}
+      {{#each seasons as |season|}}
+        {{#x-option value=season}}{{season.summary}}{{/x-option}}
+      {{/each}}
+    {{/x-select}}
+  </p>
+  <p><label>Episode</label>
+    {{#x-select value=quote.episode}}
+      {{#each selectedSeason.episodes as |episode|}}
+        {{#x-option value=episode}}{{episode.name}}{{/x-option}}
+      {{/each}}
+    {{/x-select}}
   </p>
   <input type="submit" value="Add Quote">
   <button {{action "cancel"}}>Cancel</button>

@@ -5,12 +5,14 @@ export default Ember.Route.extend({
     // return this.store.createRecord('quote');
     return Ember.RSVP.hash({
       quote: this.store.createRecord('quote'),
-      characters: this.store.findAll('character')
+      characters: this.store.findAll('character'),
+      seasons: this.store.findAll('season')
     });
   }, 
   setupController(controller, models){
     controller.set('quote', models.quote);
     controller.set('characters', models.characters);
+    controller.set('seasons', models.seasons);
   },
   actions:{
     save: function(quote){
