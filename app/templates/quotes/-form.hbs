@@ -5,6 +5,7 @@
   </p>
   <p><label>Who Said It?</label>
     {{#x-select value=quote.character}}
+    {{#x-option value=null}}Please select character.{{/x-option}}
       {{#each characters as |character|}}
         {{#x-option value=character}}{{character.name}}{{/x-option}}
       {{/each}}
@@ -12,6 +13,7 @@
   </p>
   <p><label>Season</label>
     {{#x-select value=selectedSeason}}
+      {{#x-option value=null}}Please select season.{{/x-option}}
       {{#each seasons as |season|}}
         {{#x-option value=season}}{{season.summary}}{{/x-option}}
       {{/each}}
@@ -19,7 +21,8 @@
   </p>
   <p><label>Episode</label>
     {{#x-select value=quote.episode}}
-      {{#each selectedSeason.episodes as |episode|}}
+      {{#x-option value=null}}Please select episode.{{/x-option}}   
+      {{#each selectedSeason.episodes as |episode|}} 
         {{#x-option value=episode}}{{episode.name}}{{/x-option}}
       {{/each}}
     {{/x-select}}
