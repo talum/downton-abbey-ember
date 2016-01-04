@@ -2,13 +2,24 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.createRecord('character');
+    return Ember.RSVP.hash({
+      character: this.store.createRecord('character'), 
+      actor: this.store.createRecord('actor')
+    }); 
   }, 
+  setupController(controller, models){
+    controller.set('character', models.character);
+    controller.set('actor', models.actor);
+  },
   actions: {
-    save: function(model){
-      model.save().then((character) => {
-        this.transitionTo('characters.character', character)
+    save: function(character, actor){
+      actor.save().then((actor) => {
+        character.actor = actor;
+        character.save().then((character) => {
+        this.transitionTo('characters.character', character);
       });
+
+      })
     }, 
     cancel: function(){
       this.transitionTo("characters");

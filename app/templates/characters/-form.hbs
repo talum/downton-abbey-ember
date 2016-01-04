@@ -1,15 +1,19 @@
-<form {{action 'save' model on="submit"}}>
+<form {{action 'save' character actor on="submit"}}>
   <p>
     <label>Name</label>
-    {{input value=model.name}}
+    {{input value=character.name}}
   </p>
   <p>
     <label>Title</label>
-    {{input value=model.title}}
+    {{input value=character.title}}
   </p>
     <p>
     <label>Social Class</label>
-    {{input value=model.socialClass}}
+    {{input value=character.socialClass}}
+  </p>
+  <p>
+    <label>Actor</label>
+    {{input value=actor.name}}
   </p>
   <input type="submit" value="Add New Character">
   <button {{action "cancel"}}>Cancel</button>
