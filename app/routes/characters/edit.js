@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(){
+  model(params){
     return Ember.RSVP.hash({
-      character: this.store.findRecord('character', params.character_id)
+      character: this.store.findRecord('character', params.character.id)
     }); 
   }, 
   setupController(controller, models){

@@ -1,12 +1,3 @@
-<h3>{{model.name}}</h3>
-<p><strong>Title:</strong> {{model.title}}</p>
-<p><strong>Class: </strong>{{model.socialClass}}</p>
-<p><strong>Actor: </strong>
-  {{model.actor.name}}</p>
-<p><strong>Quotes:</strong>
-  <ul>
-    {{#each model.quotes as |quote| }}
-    <li>{{quote.description}}</li>
-    {{/each}}
-  </ul>
-</p>
+{{show-character update=(action "update") name=model.name title=model.title socialClass=model.socialClass actorName=model.actor.name quotes=model.quotes}}
+
+<p><button id="delete" {{action "delete" model}}>Delete</button></p>
