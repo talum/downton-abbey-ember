@@ -12,11 +12,16 @@
       <label>Social Class</label>
       {{input value=socialClass}}
     </p>
+    <p>
+      <label>Image</label>
+      {{input value=imageURL}}
+    </p>
     <input type="submit" value="Update">
   </form>
 
 {{else}}
   <h3>{{name}}</h3>
+  <img src="{{imageURL}}" class="img-responsive">
   <p><strong>Title:</strong> {{title}}</p>
   <p><strong>Class: </strong>{{socialClass}}</p>
   <p><strong>Actor: </strong>
