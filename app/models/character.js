@@ -5,6 +5,7 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   socialClass: DS.attr('string'),
   imageURL: DS.attr('string'),
+  bio: DS.attr('string'),
   quotes: DS.hasMany('quote', {async: true}),
   actor: DS.belongsTo('actor', {async: true})
 });
