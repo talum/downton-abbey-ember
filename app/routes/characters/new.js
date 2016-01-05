@@ -14,7 +14,7 @@ export default Ember.Route.extend({
   actions: {
     save: function(character, actor){
       actor.save().then((actor) => {
-        character.actor = actor;
+        character.set('actor', actor);
         character.save().then((character) => {
         this.transitionTo('characters.character', character);
       });
