@@ -1,0 +1,33 @@
+{{#if isEditing}}
+  <form {{action 'update' on="submit"}}>
+    <p>
+      <label>Name</label>
+      {{input value=name}}
+    </p>
+    <p>
+      <label>Summary</label>
+      {{input value=summary}}
+    </p>
+      <p>
+      <label>Time Period</label>
+      {{input value=timePeriod}}
+    </p>
+    <p>
+      <label>Image</label>
+      {{input value=imageURL}}
+    </p>
+    <input type="submit" value="Update">
+  </form>
+
+{{else}}
+ <h2>{{name}}</h2> 
+  <p>Summary: {{summary}}</p>
+  <img src="{{imageURL}}" class="img-responsive">
+  <p>Time Period: {{timePeriod}}</p>
+  <p>Episodes:</p>
+  <ul>
+    {{#each episodes as |episode|}}
+    <li>{{link-to episode.name "seasons.season.episode" episode}}</li>
+    {{/each}}
+  </ul>
+{{/if}}

@@ -1,16 +1,7 @@
 
 <div class="row">
   <div class="col-md-6"> 
-    <h2>{{model.name}}</h2> 
-    <p>Summary: {{model.summary}}</p>
-    <img src="{{model.imageURL}}" class="img-responsive">
-    <p>Time Period: {{model.timePeriod}}</p>
-    <p>Episodes:</p>
-    <ul>
-      {{#each model.episodes as |episode|}}
-      <li>{{link-to episode.name "seasons.season.episode" episode}}</li>
-      {{/each}}
-    </ul>
+    {{show-season update=(action "update") name=model.name summary=model.summary timePeriod=model.timePeriod imageURL=model.imageURL episodes=model.episodes}}
   </div>
   <div class="col-md-6">
     {{outlet}}
