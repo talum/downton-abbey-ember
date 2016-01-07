@@ -1,1 +1,28 @@
-{{yield}}
+{{#if isEditing}}
+  <form {{action 'update' on="submit"}}>
+    <p>
+      <label>Title</label>
+      {{input value=name}}
+    </p>
+    <p>
+      <label>Summary</label>
+      {{textarea value=summary}}
+    </p>
+    <p>
+      <label>Image</label>
+      {{input value=imageURL}}
+    </p>
+    <input type="submit" value="Update">
+  </form>
+
+{{else}}
+  <h2>Episode Title: {{name}}</h2>
+  <img src="{{imageURL}}" class="img-responsive">
+  <p>Summary: {{summary}}</p>
+  <p>Quotes:</p>
+  {{#each quotes as |quote| }}
+    <ul>
+      <li>{{quote.description}} - {{quote.character}}</li>
+    </ul>
+  {{/each}}
+{{/if}}
