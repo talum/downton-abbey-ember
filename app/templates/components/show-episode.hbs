@@ -22,7 +22,7 @@
   <p>Quotes:</p>
   {{#each quotes as |quote| }}
     <ul>
-      <li>{{quote.description}} - {{quote.character}}</li>
+      <li>{{quote.description}} - {{link-to quote.character.name "characters.character" quote.character}}</li>
     </ul>
   {{/each}}
 {{/if}}

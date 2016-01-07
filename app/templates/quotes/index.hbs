@@ -1,5 +1,5 @@
 <ul>
     {{#each model as |quote| }}
-    <li>{{quote.description}} - <strong>{{link-to quote.character.name "characters.character" quote.character}}</strong>, Episode: {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode}}</li>
+    <li>{{quote.description}} - <strong>{{link-to quote.character.name "characters.character" quote.character}}</strong>, {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode}}</li>
     {{/each}}
   </ul>
