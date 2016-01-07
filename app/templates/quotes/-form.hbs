@@ -3,6 +3,10 @@
     <label>Quote Content</label>
     {{textarea value=quote.description}}
   </p>
+  <p>
+    <label>Context</label>
+    {{textarea value=quote.context}}
+  </p>
   <p><label>Who Said It?</label>
     {{#x-select value=quote.character}}
     {{#x-option value=null}}Please select character.{{/x-option}}
@@ -15,7 +19,7 @@
     {{#x-select value=selectedSeason}}
       {{#x-option value=null}}Please select season.{{/x-option}}
       {{#each seasons as |season|}}
-        {{#x-option value=season}}{{season.summary}}{{/x-option}}
+        {{#x-option value=season}}{{season.name}}{{/x-option}}
       {{/each}}
     {{/x-select}}
   </p>
