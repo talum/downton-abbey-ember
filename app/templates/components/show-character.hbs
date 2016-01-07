@@ -12,6 +12,10 @@
       <label>Social Class</label>
       {{input value=socialClass}}
     </p>
+      <p>
+      <label>Bio</label>
+      {{textarea value=bio}}
+    </p>
     <p>
       <label>Image</label>
       {{input value=imageURL}}
@@ -23,9 +27,10 @@
   <h3>{{name}}</h3>
   <img src="{{imageURL}}" class="img-responsive">
   <p><strong>Title:</strong> {{title}}</p>
-  <p><strong>Class: </strong>{{socialClass}}</p>
+  <p><strong>Class:</strong> {{socialClass}}</p>
+  <p><strong>Bio:</strong> {{bio}}</p>
   <p><strong>Actor: </strong>
-    {{actorName}}</p>
+    {{actor.name}}</p>
   <p><strong>Quotes:</strong>
     <ul>
       {{#each quotes as |quote| }}
