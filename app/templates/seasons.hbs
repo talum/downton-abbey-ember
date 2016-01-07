@@ -1,7 +1,7 @@
 <div class="col-md-3"> 
   <h2>Seasons</h2> 
   <ul>
-    {{#each model as |season|}}
+    {{#each sortedModel as |season|}}
       <li>{{link-to season.name "seasons.season" season}}</li>
     {{/each}}
   </ul>
