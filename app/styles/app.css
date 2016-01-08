@@ -95,16 +95,83 @@ nav a#pull{
   display:none;
 }
 
+.container{
+  width:80%;
+  margin:2em auto;
+}
+.left-menu{
+  width:40%;
+  float:left;
+}
+.main-container{
+  width:60%;
+  float:right;
+}
+.main-col{
+  width:50%;
+  float:left;
+}
+.right-col{
+  width:50%;
+  float:right;
+}
+
+aside p:first-child{
+  margin:1em auto;
+}
 /* text styling */
-h1{
+h1, h2, h3{
   font-family: 'Open Sans Condensed', sans-serif;  
   font-weight: 700;
+}
+
+h1{
   font-size:3em;
   text-align: center;
 }
 
 h1 a{ 
   text-decoration: none;
+  color:#000;
+}
+
+h2{
+  font-size: 2em;
+  text-transform: uppercase;
+  line-height: 2.2em;
+  letter-spacing: -0.02em;
+}
+
+h3{
+  font-size:1.5em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p a, li a{
+  text-decoration: none;
+}
+
+p a{
+  color:#000;
+}
+
+p a:hover, .left-menu-item a:hover{
+  color: rgb(215,192,100);
+}
+
+.left-list-items{
+  margin-top: 1em;
+}
+
+.left-menu-item{
+  height:1.5em;
+  width:100%;
+}
+
+.left-menu-item a{
   color:#000;
 }
 
@@ -121,10 +188,6 @@ h1 a{
   *zoom:1;
 }
 
-.container{
-  width:90%;
-  margin:1em auto;
-}
 
 /*media queries */
 

@@ -29,7 +29,7 @@
   <p><strong>Quotes:</strong>
     <ul>
       {{#each quotes as |quote| }}
-      <li>{{quote.description}}, {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode }}</li>
+      <li>"{{quote.description}}", {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode }}</li>
       {{/each}}
     </ul>
 </p>
