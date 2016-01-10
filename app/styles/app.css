@@ -186,6 +186,9 @@ strong {
 p{
   line-height: 1.48em;
 }
+p + p{
+  margin-top:1.25em;
+}
 
 p a, li a, #pull{
   text-decoration: none;
@@ -244,6 +247,7 @@ button, .button{
   text-decoration: none;
   padding:0.3em 0.5em;
   vertical-align: middle;
+  margin-top: 0.5em;
 }
 
 button:hover, .button:hover{

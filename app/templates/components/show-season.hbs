@@ -20,11 +20,11 @@
   </form>
 
 {{else}}
- <h3>{{name}}</h3> 
-  <p>Summary: {{summary}}</p>
-  <img src="{{imageURL}}" class="img-responsive">
-  <p>Time Period: {{timePeriod}}</p>
-  <p>Episodes:</p>
+  <h3>{{name}}</h3>
+  <img src="{{imageURL}}" class="img-responsive"> 
+  <p><strong>Summary:</strong> {{summary}}</p>
+  <p><strong>Time Period:</strong> {{timePeriod}}</p>
+  <p><strong>Episodes:</strong></p>
   <ul>
     {{#each episodes as |episode|}}
     <li>{{link-to episode.name "seasons.season.episode" episode}}</li>

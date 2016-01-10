@@ -1,11 +1,11 @@
 <h2>Quotes</h2>
 
-<div class="row">
-  <div class="col-md-3">
-  <p>{{link-to "Add New Quote" "quotes.new"}}</p>
-  
-  </div>
-  <div class="col-md-9">
+<aside class="left-menu">
+  {{#link-to "quotes.new" class="button"}}Add New Quote{{/link-to}}
+</aside>
+
+<section class="main-container">
+  <div class="main-col">
     {{outlet}}
   </div>
-</div>
+</section>

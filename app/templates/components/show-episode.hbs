@@ -18,8 +18,8 @@
 {{else}}
   <h3>{{name}}</h3>
   <img src="{{imageURL}}" class="img-responsive">
-  <p>Summary: {{summary}}</p>
-  <p>Quotes:</p>
+  <p><strong>Summary:</strong> {{summary}}</p>
+  <p><strong>Quotes:</strong></p>
   {{#each quotes as |quote| }}
     <ul>
       <li>{{quote.description}} - {{link-to quote.character.name "characters.character" quote.character}}</li>
