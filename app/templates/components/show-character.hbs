@@ -8,9 +8,13 @@
         <label>Title</label>
         {{input value=title}}
       </p>
-        <p>
+      <p>
         <label>Social Class</label>
         {{input value=socialClass}}
+      </p>
+      <p>
+        <label>Bio</label>
+        {{textarea value=bio}}
       </p>
       <p>
         <label>Image</label>
@@ -24,6 +28,8 @@
     <img src="{{imageURL}}" class="img-responsive">
     <p><strong>Title:</strong> {{title}}</p>
     <p><strong>Class: </strong>{{socialClass}}</p>
+    <p><strong>Bio: </strong>
+      {{bio}}</p>
     <p><strong>Actor: </strong>
       {{actorName}}</p>
     <p><strong>Quotes:</strong>
