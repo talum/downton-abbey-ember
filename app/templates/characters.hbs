@@ -1,13 +1,13 @@
 <h2>Characters</h2>
 
-{{!-- <div class="row">
-  <div class="col-md-3">
- --}} 
 <aside class="left-menu">
 
- <p>{{link-to "Add New Character" "characters.new"}}</p>
+ {{#link-to "characters.new" class="button"}}Add New Character{{/link-to}}
+ <br>
+  
   <label for="search">Search</label>
-    {{input value=q id="search"}}
+  {{input value=q id="search"}}
+  
   <ul class="left-list-items">  
     {{#each filteredResults as |character| }}
     <li class="left-menu-item">{{link-to character.name "characters.character" character}}</li>
@@ -19,8 +19,3 @@
   {{outlet}}
   </div>
 </section>
-{{!--   </div>
-  <div class="col-md-9">
-    {{outlet}}
-  </div>
-</div> --}}

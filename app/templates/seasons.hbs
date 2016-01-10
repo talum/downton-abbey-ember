@@ -1,11 +1,14 @@
-<div class="col-md-3"> 
-  <h2>Seasons</h2> 
-  <ul>
+<h2>Seasons</h2> 
+
+<aside class="left-menu">
+  <ul class="left-list-items">
     {{#each sortedModel as |season|}}
-      <li>{{link-to season.name "seasons.season" season}}</li>
+      <li class="left-menu-item">{{link-to season.name "seasons.season" season}}</li>
     {{/each}}
   </ul>
-</div>
-<div class="col-md-9">
-  {{outlet}}
-</div>
+</aside>
+<section class="main-container">
+  <div class="main-col">
+    {{outlet}}
+  </div>
+</section>

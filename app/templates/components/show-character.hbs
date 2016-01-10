@@ -1,36 +1,36 @@
-{{#if isEditing}}
-  <form {{action 'update' on="submit"}}>
-    <p>
-      <label>Name</label>
-      {{input value=name}}
-    </p>
-    <p>
-      <label>Title</label>
-      {{input value=title}}
-    </p>
+  {{#if isEditing}}
+    <form {{action 'update' on="submit"}}>
       <p>
-      <label>Social Class</label>
-      {{input value=socialClass}}
-    </p>
-    <p>
-      <label>Image</label>
-      {{input value=imageURL}}
-    </p>
-    <input type="submit" value="Update">
-  </form>
+        <label>Name</label>
+        {{input value=name}}
+      </p>
+      <p>
+        <label>Title</label>
+        {{input value=title}}
+      </p>
+        <p>
+        <label>Social Class</label>
+        {{input value=socialClass}}
+      </p>
+      <p>
+        <label>Image</label>
+        {{input value=imageURL}}
+      </p>
+      <input type="submit" value="Update">
+    </form>
 
-{{else}}
-  <h3>{{name}}</h3>
-  <img src="{{imageURL}}" class="img-responsive">
-  <p><strong>Title:</strong> {{title}}</p>
-  <p><strong>Class: </strong>{{socialClass}}</p>
-  <p><strong>Actor: </strong>
-    {{actorName}}</p>
-  <p><strong>Quotes:</strong>
-    <ul>
-      {{#each quotes as |quote| }}
-      <li>"{{quote.description}}", {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode }}</li>
-      {{/each}}
-    </ul>
-</p>
-{{/if}}
+  {{else}}
+    <h3>{{name}}</h3>
+    <img src="{{imageURL}}" class="img-responsive">
+    <p><strong>Title:</strong> {{title}}</p>
+    <p><strong>Class: </strong>{{socialClass}}</p>
+    <p><strong>Actor: </strong>
+      {{actorName}}</p>
+    <p><strong>Quotes:</strong>
+      <ul>
+        {{#each quotes as |quote| }}
+        <li>"{{quote.description}}", {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode }}</li>
+        {{/each}}
+      </ul>
+  </p>
+  {{/if}}

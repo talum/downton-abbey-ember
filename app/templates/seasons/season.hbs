@@ -1,9 +1,8 @@
 
-<div class="row">
-  <div class="col-md-6"> 
+  <div class="middle-col">
     {{show-season update=(action "update") name=model.name summary=model.summary timePeriod=model.timePeriod imageURL=model.imageURL episodes=model.episodes}}
   </div>
-  <div class="col-md-6">
+
+  <div class="right-col">
     {{outlet}}
   </div>
-</div>
