@@ -79,7 +79,7 @@ nav li{
   width:30%;
 }
 
-nav a{
+nav li a{
   color: #fff;
   display: inline-block;
   width:100%;
@@ -103,11 +103,11 @@ nav a#pull{
   margin:2em auto;
 }
 .left-menu{
-  width:30%;
+  width:25%;
   float:left;
 }
 .main-container{
-  width:70%;
+  width:75%;
   float:right;
 }
 .main-col{
@@ -120,9 +120,9 @@ nav a#pull{
   float:left;
 }
 .right-col{
-  width:40%;
+  width:45%;
   float:right;
-  padding-left:10%;
+  padding-left:5%;
 }
 
 label{
@@ -187,16 +187,20 @@ p{
   line-height: 1.48em;
 }
 
-p a, li a{
+p a, li a, #pull{
   text-decoration: none;
 }
 
-p a{
+p a, li a, #pull{
   color:#000;
 }
 
-p a:hover, .left-menu-item a:hover{
+p a:hover, .left-menu-item a:hover, li a:hover, #pull{
   color: rgb(215,192,100);
+}
+
+img{
+  width:100%;
 }
 
 .left-list-items{
@@ -272,6 +276,7 @@ button:hover, .button:hover{
   h1{
     font-size: 2em;
   }
+
 }
 
 @media only screen and (max-width:480px){
@@ -284,6 +289,7 @@ button:hover, .button:hover{
     float:none;
     width:100%;
     position:relative;
+    text-align: center;
   }
 
   nav a#pull{
@@ -291,6 +297,9 @@ button:hover, .button:hover{
     background-color: #000;
     width:100%;
     position:relative;
+    text-align: center;
+    padding:0.5em 0;
+    text-transform: uppercase;
   }
 
   nav a#pull:after{
@@ -301,5 +310,29 @@ button:hover, .button:hover{
     position: absolute;
     right:15px;
     top:10px;
+  }
+  .left-menu{
+    display:none;
+    float:none;
+  }
+  .main-container{
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+  .middle-col{
+    float:none;
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+  .right-col{
+    float:none;
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
   }
 }
