@@ -1,5 +1,16 @@
 <div class="middle-col">
   {{show-character update=(action "update") name=model.name title=model.title socialClass=model.socialClass bio=model.bio imageURL=model.imageURL actorName=model.actor.name quotes=model.quotes}}
 
-<button id="delete" {{action "delete" model}}>Delete</button>
+<button id="delete" {{action "delete"}}>Delete</button>
 </div>
+
+{{#if deleteMode}}
+<h1>hello</h1>
+<div class="modal">
+  <div class="confirm-box">
+    <h4>Are you sure?</h4>
+    <button {{action "confirmDelete"}}>Yes</button>
+    <button {{action "cancelDelete"}}>No</button>
+  </div>
+</div>
+{{/if}}
