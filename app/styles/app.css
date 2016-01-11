@@ -156,7 +156,7 @@ textarea{
 }
 
 /* text styling */
-h1, h2, h3, button, .button, label, select option{
+h1, h2, h3, button, .button, label, select{
   font-family: 'Open Sans Condensed', sans-serif;  
   font-weight: 700;
 }
@@ -230,6 +230,15 @@ img{
 
 .form{
   width:100%;
+}
+
+select{
+  width:100%;
+  background: #FFF;
+  padding:0.8em;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+  font-weight: 500;
 }
 
 .clearfix:before, .clearfix:after{
@@ -353,7 +362,5 @@ button:hover, .button:hover{
     display:block;
     width:100%;
   }
-  select{
-    width:100%;
-  }
+
 }
