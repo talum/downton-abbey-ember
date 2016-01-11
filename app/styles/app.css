@@ -340,9 +340,12 @@ button:hover, .button:hover{
   }
   .main-container{
     display:block;
+    position: relative;
     width:100%;
-    margin:0;
-    padding:0;
+    float:none;
+    margin:0%;
+    padding:0%;
+    left: -5%;
   }
   .middle-col{
     float:none;
