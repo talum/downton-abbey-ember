@@ -125,6 +125,10 @@ nav a#pull{
   padding-left:5%;
 }
 
+.mobile-character-select{
+  display:none;
+}
+
 label{
   display:block;
   margin-top: 1.5em;
@@ -152,7 +156,7 @@ textarea{
 }
 
 /* text styling */
-h1, h2, h3, button, .button, label{
+h1, h2, h3, button, .button, label, select option{
   font-family: 'Open Sans Condensed', sans-serif;  
   font-weight: 700;
 }
@@ -344,5 +348,12 @@ button:hover, .button:hover{
     width:100%;
     margin:0;
     padding:0;
+  }
+  .mobile-character-select{
+    display:block;
+    width:100%;
+  }
+  select{
+    width:100%;
   }
 }

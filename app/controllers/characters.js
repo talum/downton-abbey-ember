@@ -13,5 +13,12 @@ export default Ember.Controller.extend({
     } else{
       return characters;
     }
-  })
+  }), 
+  character: null, 
+  actions:{
+    selectCharacter(characterParams){
+      let character = this.store.findRecord('character', characterParams);
+      this.transitionToRoute("characters.character", character);
+    }
+  }
 });

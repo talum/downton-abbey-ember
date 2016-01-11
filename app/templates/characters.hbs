@@ -11,8 +11,17 @@
     {{#each filteredResults as |character| }}
     <li class="left-menu-item">{{link-to character.name "characters.character" character}}</li>
     {{/each}}
-  </ul>
+  </ul>  
 </aside>
+
+<aside class="mobile-character-select">
+  <select onchange={{action "selectCharacter" value="target.value"}}>
+  {{#each filteredResults as |characterChoice|}}
+    <option value={{characterChoice.id}} selected={{eq character characterChoice}}>{{characterChoice.name}}</option>
+  {{/each}}
+  </select>
+</aside>
+
 <section class="main-container">
   <div class="main-col">
   {{outlet}}
