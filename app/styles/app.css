@@ -145,11 +145,10 @@ input, textarea{
 
 input, textarea, input[type=text], textarea[type=text]{
   font-family: 'Open Sans Condensed', sans-serif;  
-  max-width: 175px;
 }
 
 textarea{
-  height:200px;
+  height:150px;
 }
 
 /* text styling */
@@ -225,6 +224,10 @@ img{
   color:#000;
 }
 
+.form{
+  width:100%;
+}
+
 .clearfix:before, .clearfix:after{
   content: " ";
   display: table;
@@ -246,12 +249,15 @@ button, .button{
   border: 0px;
   text-decoration: none;
   padding:0.3em 0.5em;
-  vertical-align: middle;
   margin-top: 0.5em;
 }
 
 button:hover, .button:hover{
   color: rgb(215,192,100);
+}
+
+#search{
+  max-width:175px;
 }
 
 /*media queries */
