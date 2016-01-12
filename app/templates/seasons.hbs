@@ -7,6 +7,15 @@
     {{/each}}
   </ul>
 </aside>
+
+<aside class="mobile-select">
+  <select onchange={{action "selectSeason" value="target.value"}}>
+  {{#each sortedModel as |seasonChoice|}}
+    <option value={{seasonChoice.id}} selected={{eq season seasonChoice}}>{{seasonChoice.name}}</option>
+  {{/each}}
+  </select>
+</aside>
+
 <section class="main-container">
   <div class="main-col">
     {{outlet}}

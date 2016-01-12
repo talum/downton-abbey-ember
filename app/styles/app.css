@@ -125,7 +125,7 @@ nav a#pull{
   padding-left:5%;
 }
 
-.mobile-character-select{
+.mobile-select{
   display:none;
 }
 
@@ -411,7 +411,7 @@ button:hover, .button:hover{
     margin:0;
     padding:0;
   }
-  .mobile-character-select{
+  .mobile-select{
     display:block;
     width:100%;
   }
