@@ -11,6 +11,14 @@ export default Ember.Route.extend({
     controller.set('character', models.character);
     controller.set('actor', models.actor);
   },
+  resetController(controller, isExiting){
+    if (isExiting){
+      var character = controller.get('character');
+      if(character.get('isNew')){
+        character.destroyRecord();
+      }
+    }
+  },
   actions: {
     cancel: function(){
       this.transitionTo("characters");

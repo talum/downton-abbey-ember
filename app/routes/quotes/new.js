@@ -13,5 +13,13 @@ export default Ember.Route.extend({
     controller.set('quote', models.quote);
     controller.set('characters', models.characters);
     controller.set('seasons', models.seasons);
+  },
+  resetController(controller, isExiting){
+    if(isExiting){
+      var quote = controller.get('quote');
+      if(quote.get('isNew')){
+        quote.destroyRecord();
+      }
+    }
   }
 });
