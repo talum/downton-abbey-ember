@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   isValid: Ember.computed(
     'quote.description',
+    'quote.context',
+    'quote.character',
+    'quote.episode',
     {
       get(){
         return !Ember.isEmpty(this.get('quote.description')) &&

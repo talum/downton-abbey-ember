@@ -1,4 +1,5 @@
 <form {{action 'save' character actor on="submit"}}>
+  <p>{{errorMessage}}</p>
   <p>
     <label>Name</label>
     {{input value=character.name}}
@@ -19,6 +20,6 @@
     <label>Actor</label>
     {{input value=actor.name}}
   </p>
-  <input type="submit" value="Add New Character">
+  <input type="submit" value="Add New Character" class="button">
   <button {{action "cancel"}}>Cancel</button>
 </form>
