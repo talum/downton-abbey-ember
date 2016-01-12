@@ -186,7 +186,7 @@ strong {
   font-weight: bold;
 }
 
-p{
+p, li{
   line-height: 1.48em;
 }
 p + p{
@@ -198,11 +198,13 @@ p a, li a, #pull{
 }
 
 p a, li a, #pull{
-  color:#000;
+  color:#c08f4c;
 }
 
 p a:hover, .left-menu-item a:hover, li a:hover, #pull{
   color: rgb(215,192,100);
+  border-bottom: 1px solid rgb(215, 192, 100);
+  padding-bottom:0.1em;
 }
 
 img{
@@ -224,8 +226,10 @@ img{
   border-bottom: 1px solid #d4d4d4;
 }
 
-.left-menu-item a{
-  color:#000;
+.left-menu-item a:hover{
+  text-decoration: none;
+  border-bottom: 1px;
+  padding-bottom: 0;
 }
 
 .form{
@@ -263,6 +267,23 @@ select{
   background:#FFF;
 }
 
+.quote-container{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  align-items:center;
+  align-content:center;
+}
+.tile{
+  flex: 0 1 33.33%;
+  margin: auto;
+  padding:2%;
+}
+.crop-height{
+  max-height:200px;
+  overflow:hidden;
+}
+
 .clearfix:before, .clearfix:after{
   content: " ";
   display: table;
@@ -274,6 +295,13 @@ select{
 
 .clearfix{
   *zoom:1;
+}
+
+/*alignmnent*/
+.right{
+  display:block;
+  float:right;
+  text-align: right;
 }
 
 /* element styles */
@@ -386,6 +414,11 @@ button:hover, .button:hover{
   .mobile-character-select{
     display:block;
     width:100%;
+  }
+  .tile{
+    flex: 0 1 100%;
+    margin: auto;
+    padding:2%;
   }
 
 }
