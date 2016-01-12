@@ -13,15 +13,5 @@ export default Ember.Route.extend({
     controller.set('quote', models.quote);
     controller.set('characters', models.characters);
     controller.set('seasons', models.seasons);
-  },
-  actions:{
-    save: function(quote){
-      quote.save().then((quote) => {
-        this.transitionTo('quotes.index');
-      });
-    }, 
-    cancel: function(){
-      this.transitionTo('quotes');
-    }
   }
 });
