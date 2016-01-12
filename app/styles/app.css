@@ -73,13 +73,13 @@ nav ul{
   height:50px;
 }
 
-nav li{
+nav li.nav-item{
   display: inline;
   float: left;
   width:30%;
 }
 
-nav li a{
+nav li.nav-item a{
   color: #fff;
   display: inline-block;
   width:100%;
@@ -90,8 +90,9 @@ nav li a{
   line-height: 1.5em;
 }
 
-nav a:hover, nav a:active{
+nav li.nav-item a:hover, nav a:active{
   color: rgb(215,192,100);
+  border-bottom:0;
 }
 
 nav a#pull{
@@ -201,7 +202,7 @@ p a, li a, #pull{
   color:#c08f4c;
 }
 
-p a:hover, .left-menu-item a:hover, li a:hover, #pull{
+p a:hover, .left-menu-item a:hover, li a:hover{
   color: rgb(215,192,100);
   border-bottom: 1px solid rgb(215, 192, 100);
   padding-bottom:0.1em;
