@@ -76,7 +76,7 @@ nav ul{
 nav li.nav-item{
   display: inline;
   float: left;
-  width:30%;
+  width:33.33%;
 }
 
 nav li.nav-item a{
@@ -358,14 +358,20 @@ button:hover, .button:hover{
     display: none;
     height: auto;
   }
-  nav li{
+  nav li.nav-item{
     display: block;
     float:none;
     width:100%;
-    position:relative;
-    text-align: center;
+    padding:0;
+    margin:0 0 0 -2.5%;
+    height:auto;
   }
 
+  nav li.nav-item a:hover{
+    border:0;
+    padding:0;
+  }
+  
   nav a#pull{
     display:block;
     background-color: #000;
