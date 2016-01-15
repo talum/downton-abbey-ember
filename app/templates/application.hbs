@@ -6,6 +6,11 @@
     <li class="nav-item">{{link-to "Characters" "characters"}}</li>
     <li class="nav-item">{{link-to "Quotes" "quotes"}}</li>
     <li class="nav-item">{{link-to "Seasons" "seasons"}}</li>
+    {{#if session.isAuthenticated}}
+      <button {{action 'invalidateSession'}}>Logout</button>
+    {{else}}
+      {{#link-to 'login'}}Login{{/link-to}}
+    {{/if}}
   </ul>
   <a href="#" id="pull">Menu</a>
 </nav>

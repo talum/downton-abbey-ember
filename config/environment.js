@@ -1,6 +1,7 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+
   var ENV = {
     modulePrefix: 'downton-abbey-ember',
     environment: environment,
@@ -19,12 +20,19 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['ember-simple-auth'] = {
+    crossOriginWhitelist: ['*']
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV['simple-auth-devise'] = {
+      serverTokenEndpoint: 'http://localhost:3000/users/sign_in'
+    }
   }
 
   if (environment === 'test') {
@@ -45,3 +53,4 @@ module.exports = function(environment) {
 
   return ENV;
 };
+
