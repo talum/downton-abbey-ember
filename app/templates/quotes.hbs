@@ -1,7 +1,9 @@
 <h2>Quotes</h2>
 
 <aside class="left-menu">
-  {{#link-to "quotes.new" class="button"}}Add New Quote{{/link-to}}
+  {{#if session.isAuthenticated}}
+    {{#link-to "quotes.new" class="button"}}Add New Quote{{/link-to}}
+  {{/if}}
 </aside>
 
 <section class="main-container">

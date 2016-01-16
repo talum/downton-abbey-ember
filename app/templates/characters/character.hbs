@@ -1,7 +1,9 @@
 <div class="middle-col">
   {{show-character update=(action "update") name=model.name title=model.title socialClass=model.socialClass bio=model.bio imageURL=model.imageURL actorName=model.actor.name quotes=model.quotes}}
 
-<button id="delete" {{action "delete"}}>Delete</button>
+{{#if session.isAuthenticated}}
+  <button id="delete" {{action "delete"}}>Delete</button>
+{{/if}}
 </div>
 
 {{#if deleteMode}}

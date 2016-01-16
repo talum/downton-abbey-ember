@@ -1,9 +1,11 @@
 <h2>Characters</h2>
 
 <aside class="left-menu">
-
- {{#link-to "characters.new" class="button"}}Add New Character{{/link-to}}
-  
+ 
+ {{#if session.isAuthenticated}}
+   {{#link-to "characters.new" class="button"}}Add New Character{{/link-to}}
+ {{/if}} 
+ 
   <label for="search">Search</label>
   {{input value=q id="search"}}
   
