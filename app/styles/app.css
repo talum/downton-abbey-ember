@@ -79,6 +79,14 @@ nav li.nav-item{
   width:25%;
 }
 
+.nav-button{
+  font-family: Cambria, Georgia, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin:0.6em;
+  width:100%;
+}
+
 nav li.nav-item a{
   color: #fff;
   display: inline-block;
@@ -345,6 +353,10 @@ button:hover, .button:hover{
     text-align: left;
     width:100%;
     text-indent: 20px;
+  }
+  .nav-button{
+    width:100%;
+    text-align: center;
   }
 
   h1{

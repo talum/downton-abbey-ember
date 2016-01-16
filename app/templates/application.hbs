@@ -7,7 +7,7 @@
     <li class="nav-item">{{link-to "Quotes" "quotes"}}</li>
     <li class="nav-item">{{link-to "Seasons" "seasons"}}</li>
     {{#if session.isAuthenticated}}
-      <li class="nav-item"><button {{action 'invalidateSession'}}>Logout</button></li>
+      <li class="nav-item"><button class="nav-button" {{action 'invalidateSession'}}>Logout</button></li>
     {{else}}
       <li class="nav-item">{{#link-to 'login'}}Login{{/link-to}}</li>
     {{/if}}
