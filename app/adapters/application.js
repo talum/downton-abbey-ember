@@ -1,6 +1,6 @@
 import ActiveModelAdapter from 'active-model-adapter';
 
 export default ActiveModelAdapter.extend({
-  host: "http://localhost:3000"
+  host: "https://downton-abbey-quips-api.herokuapp.com"
   // namespace: 'api/v1'
 });
