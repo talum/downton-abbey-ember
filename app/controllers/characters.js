@@ -20,5 +20,6 @@ export default Ember.Controller.extend({
       let character = this.store.findRecord('character', characterParams);
       this.transitionToRoute("characters.character", character);
     }
-  }
+  }, 
+  session: Ember.inject.service('session')
 });
