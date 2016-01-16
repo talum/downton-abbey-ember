@@ -357,6 +357,8 @@ button:hover, .button:hover{
   .nav-button{
     width:100%;
     text-align: center;
+    display:block;
+    margin-left: 1.3em;
   }
 
   h1{
