@@ -20,6 +20,26 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/downton-abbey-ember.js"></script>
+    <script>
+      $(document).on('ready', function(){
+      var pull = $('#pull');
+      var menu = $('nav ul');
+      var menuHeight = menu.height();
+
+      $(pull).on('click', function(e){
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && menu.is(':hidden')){
+          menu.removeAttr('style');
+        }
+      })
+
+    })
+    </script>
 
     {{content-for 'body-footer'}}
   </body>
