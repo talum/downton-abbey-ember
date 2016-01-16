@@ -289,7 +289,7 @@ select{
   padding:2%;
 }
 .crop-height{
-  max-height:200px;
+  max-height:350px;
   overflow:hidden;
 }
 
