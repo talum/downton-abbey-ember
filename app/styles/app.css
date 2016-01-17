@@ -108,6 +108,7 @@ nav a#pull{
 }
 
 .container{
+  max-width:960px;
   width:80%;
   margin:2em auto;
 }
@@ -280,7 +281,7 @@ select{
   display:flex;
   flex-flow: row wrap;
   justify-content:space-around;
-  align-items:center;
+  align-items:flex-start;
   align-content:center;
 }
 .tile{
@@ -289,7 +290,7 @@ select{
   padding:2%;
 }
 .crop-height{
-  max-height:350px;
+  max-height:300px;
   overflow:hidden;
 }
 
@@ -334,6 +335,18 @@ button:hover, .button:hover{
 
 /*media queries */
 
+@media screen and (max-width:800px){
+  h3{
+    font-size: 1.2em;
+  }
+
+  .crop-height{
+    max-height:150px;
+    overflow:hidden;
+  }
+
+}
+
 @media screen and (max-width:600px){
   nav{
     height: auto;
@@ -359,6 +372,11 @@ button:hover, .button:hover{
     text-align: center;
     display:block;
     margin-left: 1.3em;
+  }
+
+  .crop-height{
+    max-height:250px;
+    overflow:hidden;
   }
 
   h1{
