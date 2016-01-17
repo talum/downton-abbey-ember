@@ -369,7 +369,6 @@ button:hover, .button:hover{
 
 @media only screen and (max-width:480px){
   nav ul{
-    display: none;
     height: auto;
   }
   nav li.nav-item{
