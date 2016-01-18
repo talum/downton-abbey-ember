@@ -288,9 +288,10 @@ select{
   flex: 0 1 33.33%;
   margin: auto;
   padding:2%;
+  height:450px;
 }
 .crop-height{
-  max-height:300px;
+  max-height:250px;
   overflow:hidden;
 }
 
