@@ -166,7 +166,7 @@ textarea{
 }
 
 /* text styling */
-h1, h2, h3, button, .button, label, select{
+h1, h2, h3, h4, button, .button, label, select{
   font-family: 'Open Sans Condensed', sans-serif;  
   font-weight: 700;
 }
@@ -190,6 +190,10 @@ h2{
 
 h3{
   font-size:1.5em;
+}
+
+h4{
+  font-size:1.3em;
 }
 
 strong {
