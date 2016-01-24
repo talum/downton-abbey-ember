@@ -24,17 +24,21 @@
     </form>
 
   {{else}}
-    <h3>{{name}}</h3>
-    <img src="{{imageURL}}" class="img-responsive">
-    <p><strong>Title:</strong> {{title}}</p>
-    <p><strong>Class: </strong>{{socialClass}}</p>
-    <p><strong>Bio: </strong>
-      {{bio}}</p>
-    <p><strong>Quotes:</strong>
-      <ul>
-        {{#each quotes as |quote| }}
-        <li>"{{quote.description}}", {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode }}</li>
-        {{/each}}
-      </ul>
-  </p>
+  <div class="content-container">
+    <div class="character-name"><h3>{{name}}</h3></div>
+    <div class="crop-height-char-page"><img src="{{imageURL}}" class="img-responsive"></div>
+    <div class="content">
+      <p><strong>Title:</strong> {{title}}</p>
+      <p><strong>Class: </strong>{{socialClass}}</p>
+      <p><strong>Bio: </strong>
+        {{bio}}</p>
+      <p><strong>Quotes:</strong>
+        <ul class="quote-list">
+          {{#each quotes as |quote| }}
+          <li>"{{quote.description}}"—{{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode }}</li>
+          {{/each}}
+        </ul>
+      </p>
+    </div>
+  </div>
   {{/if}}

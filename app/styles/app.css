@@ -286,13 +286,26 @@ select{
   padding: 5px 20px 13px 20px;
   background:#FFF;
 }
-
+.content-container{
+  box-shadow: 0 1px 30px rgba(0,0,0,.4);
+}
+.content{
+  padding:5%;
+}
 .quote-container{
   display:flex;
   flex-flow: row wrap;
   justify-content:space-around;
   align-items:flex-start;
   align-content:center;
+}
+ul.quote-list{
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 5px;
+}
+ul.quote-list li{
+  margin-bottom: 1em;
 }
 .tile{
   flex: 0 1 28%;
@@ -305,6 +318,9 @@ select{
   background-color: #000;
   font-size: 1.4em;
   padding:3%;
+}
+.character-name h3{
+  color:#fff;
 }
 .character-name a{
   text-decoration: none;
@@ -327,6 +343,10 @@ select{
 }
 .crop-height{
   max-height:250px;
+  overflow:hidden;
+}
+.crop-height-char-page{
+  max-height:300px;
   overflow:hidden;
 }
 .season-text{
@@ -383,6 +403,10 @@ button:hover, .button:hover{
     max-height:150px;
     overflow:hidden;
   }
+  .crop-height-char-page{
+  max-height:170px;
+  overflow:hidden;
+}
 
 }
 
