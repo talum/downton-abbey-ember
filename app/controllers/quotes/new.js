@@ -11,6 +11,8 @@ export default Ember.Controller.extend({
     'hasCharacter',
     'hasEpisode'
   ), 
+  sortProperties: ['name:asc'],
+  sortedSeasons: Ember.computed.sort('seasons', 'sortProperties'), 
   actions:{
     save: function(){
       if (this.get('isValid')){

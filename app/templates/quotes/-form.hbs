@@ -19,7 +19,7 @@
   <p><label>Season</label>
     {{#x-select value=selectedSeason}}
       {{#x-option value=null}}Please select season.{{/x-option}}
-      {{#each seasons as |season|}}
+      {{#each sortedSeasons as |season|}}
         {{#x-option value=season}}{{season.name}}{{/x-option}}
       {{/each}}
     {{/x-select}}
