@@ -174,6 +174,7 @@ textarea{
 
 /* text styling */
 h1, h2, h3, h4, button, .button, label, select, .tile p, .character-name span{
+  font-family: 'Open Sans Condensed', sans-serif;  
   font-weight: 700;
 }
 
@@ -381,6 +382,7 @@ button, .button{
   text-decoration: none;
   padding:0.3em 0.5em;
   margin-top: 0.5em;
+  font-weight: 700;
 }
 
 button:hover, .button:hover{
