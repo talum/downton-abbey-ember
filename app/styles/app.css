@@ -399,6 +399,14 @@ button:hover, .button:hover{
     font-size: 1.2em;
   }
 
+  .tile{
+    flex: 0 1 46%;
+    margin: 2%;
+    padding:0%;
+    border-radius:3px;
+    box-shadow: 0 1px 30px rgba(0,0,0,.4);
+  }
+
   .crop-height{
     max-height:150px;
     overflow:hidden;
