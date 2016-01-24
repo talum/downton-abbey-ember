@@ -56,7 +56,8 @@ table {
 body{
   background-color: #FFF;
   color: #000;
-  font: normal 100% Cambria, Georgia, serif;
+  font: normal 100% 'Open Sans Condensed', sans-serif;  
+  font-weight:550;
 }
 
 nav{
@@ -77,10 +78,10 @@ nav li.nav-item{
   display: inline;
   float: left;
   width:25%;
+  font-weight: 700;
 }
 
 .nav-button{
-  font-family: Cambria, Georgia, serif;
   font-weight: normal;
   text-transform: uppercase;
   margin:0.6em;
@@ -167,7 +168,6 @@ textarea{
 
 /* text styling */
 h1, h2, h3, h4, button, .button, label, select, .tile p, .character-name span{
-  font-family: 'Open Sans Condensed', sans-serif;  
   font-weight: 700;
 }
 
