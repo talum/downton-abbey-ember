@@ -90,6 +90,9 @@ nav li.nav-item{
 
 nav li.nav-item a{
   color: #fff;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
   display: inline-block;
   width:100%;
   margin:0.8em;
@@ -101,6 +104,9 @@ nav li.nav-item a{
 
 nav li.nav-item a:hover, nav a:active{
   color: rgb(215,192,100);
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
   border-bottom:0;
 }
 
@@ -297,15 +303,24 @@ select{
 }
 .character-name{
   background-color: #000;
-}
-.character-name span{
-  font-size: 1.5em;
+  font-size: 1.4em;
+  padding:3%;
 }
 .character-name a{
   text-decoration: none;
   color:#FFF;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
   text-transform: uppercase;
-  padding:5%;
+}
+.character-name a:hover{
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  color: rgb(215,192,100);
+  text-transform: uppercase;
 }
 .quote-text{
   padding:5%;
