@@ -479,8 +479,6 @@ button:hover, .button:hover{
   }
   .tile{
     flex: 0 1 100%;
-    margin: auto;
-    padding:2%;
   }
 
 }
