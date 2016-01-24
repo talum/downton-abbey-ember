@@ -21,8 +21,8 @@
   <p><strong>Summary:</strong> {{summary}}</p>
   <p><strong>Quotes:</strong></p>
   {{#each quotes as |quote| }}
-    <ul>
-      <li>{{quote.description}} - {{link-to quote.character.name "characters.character" quote.character}}</li>
+    <ul class="quote-list">
+      <li>{{quote.description}}—{{link-to quote.character.name "characters.character" quote.character}}</li>
     </ul>
   {{/each}}
 {{/if}}

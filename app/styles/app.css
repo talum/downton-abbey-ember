@@ -196,6 +196,7 @@ h2{
 
 h3{
   font-size:1.5em;
+  color:#fff;
 }
 
 h4{
@@ -314,14 +315,12 @@ ul.quote-list li{
   border-radius:3px;
   box-shadow: 0 1px 30px rgba(0,0,0,.4);
 }
-.character-name{
+.character-name, h3{
   background-color: #000;
   font-size: 1.4em;
   padding:3%;
 }
-.character-name h3{
-  color:#fff;
-}
+
 .character-name a{
   text-decoration: none;
   color:#FFF;
