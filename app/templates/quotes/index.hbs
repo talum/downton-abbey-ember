@@ -4,7 +4,7 @@
       <div class="crop-height">
         <img src="{{quote.character.imageURL}}">
       </div>
-      <h4>"{{quote.description}}"</h4>
+      <div class="quote-text"><h4>"{{quote.description}}"</h4></div>
       <p class="right">&#8212; <strong>{{link-to quote.character.name "characters.character" quote.character}}</strong>, {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode}}</p>
     </div>
   {{/each}}

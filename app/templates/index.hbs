@@ -1,11 +1,12 @@
 <div class="quote-container">
   {{#each model as |quote|}}
     <div class="tile">
+      <div class="character-name"><span class="char-name-text"><strong>{{link-to quote.character.name "characters.character" quote.character}}</strong></span></div>
       <div class="crop-height">
         <img src="{{quote.character.imageURL}}">
       </div>
-      <h3>"{{quote.description}}"</h3>
-      <p class="right">&#8212; <strong>{{link-to quote.character.name "characters.character" quote.character}}</strong>, {{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode}}</p>
+      <div class="quote-text"><p>"{{quote.description}}"</p></div>
+      <p class="season-text right">{{link-to quote.episode.name "seasons.season.episode" quote.episode.season quote.episode}}</p>
     </div>
   {{/each}}
 </div>

@@ -166,7 +166,7 @@ textarea{
 }
 
 /* text styling */
-h1, h2, h3, h4, button, .button, label, select{
+h1, h2, h3, h4, button, .button, label, select, .tile p, .character-name span{
   font-family: 'Open Sans Condensed', sans-serif;  
   font-weight: 700;
 }
@@ -289,16 +289,35 @@ select{
   align-content:center;
 }
 .tile{
-  flex: 0 1 33.33%;
-  margin: auto;
-  padding:2%;
-  height:450px;
+  flex: 0 1 28%;
+  margin: 2%;
+  padding:0%;
+  border-radius:3px;
+  box-shadow: 0 1px 30px rgba(0,0,0,.4);
+}
+.character-name{
+  background-color: #000;
+}
+.character-name span{
+  font-size: 1.5em;
+}
+.character-name a{
+  text-decoration: none;
+  color:#FFF;
+  text-transform: uppercase;
+  padding:5%;
+}
+.quote-text{
+  padding:5%;
 }
 .crop-height{
   max-height:250px;
   overflow:hidden;
 }
-
+.season-text{
+  padding-right:5%;
+  padding-bottom:5%;
+}
 .clearfix:before, .clearfix:after{
   content: " ";
   display: table;
